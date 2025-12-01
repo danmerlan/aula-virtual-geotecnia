@@ -1,1 +1,233 @@
-PUT YOUR style.css content here
+/* ========= PALETA ========= */
+
+:root {
+  --color-bg: #f3fafb;              /* fondo muy claro */
+  --color-primary: #0f766e;         /* verde azulado principal */
+  --color-primary-dark: #0b5250;    /* verde oscuro */
+  --color-secondary: #1d4ed8;       /* azul intenso */
+  --color-accent: #e11d48;          /* rojo acento */
+  --color-card-bg: #ffffff;
+  --color-text-main: #111827;
+  --color-text-muted: #6b7280;
+  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.12);
+  --radius-lg: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-main);
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.12) 0, transparent 45%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.12) 0, transparent 45%),
+    var(--color-bg);
+}
+
+/* ========= TITULOS ========= */
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.text-muted {
+  color: var(--color-text-muted) !important;
+}
+
+/* ========= NAVBAR ========= */
+
+.navbar {
+  background: linear-gradient(90deg, var(--color-primary-dark), var(--color-secondary));
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.25);
+}
+
+.navbar-brand {
+  color: #ecfeff !important;
+  letter-spacing: 0.02em;
+}
+
+.navbar-brand span {
+  font-size: 1.05rem;
+}
+
+.logo-empresa {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid rgba(248, 250, 252, 0.8);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.4);
+}
+
+.navbar .nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  position: relative;
+  padding-inline: 0.9rem;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.2rem;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.2s ease-out;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Icono hamburguesa */
+.navbar-toggler {
+  border-color: rgba(248, 250, 252, 0.6);
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(
+    to bottom,
+    #f9fafb 0,
+    #f9fafb 33%,
+    transparent 33%,
+    transparent 66%,
+    #f9fafb 66%,
+    #f9fafb 100%
+  );
+}
+
+/* ========= TARJETAS Y SECCIONES ========= */
+
+header {
+  color: var(--color-primary-dark);
+}
+
+.card-custom {
+  background: var(--color-card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.hero {
+  padding: 1.8rem 1.9rem;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.07), rgba(59, 130, 246, 0.08));
+}
+
+.hero p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tarjeta profesor / perfil */
+
+.docente-foto {
+  width: 115px;
+  height: 115px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid #e0f2fe;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.22);
+  margin-bottom: 0.75rem;
+}
+
+/* ========= BOTONES ========= */
+
+.btn-main {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ecfeff;
+  font-weight: 600;
+  border-radius: 999px;
+  padding-inline: 1.2rem;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.45);
+}
+
+.btn-main:hover {
+  background: #059669;
+  border-color: #059669;
+  color: #ecfeff;
+}
+
+.btn-outline-secondary {
+  border-radius: 999px;
+  border-color: rgba(148, 163, 184, 0.9);
+}
+
+/* Botones chip (trivia, navegación rápida) */
+
+.btn-tag {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #065f46;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0.2rem 0.2rem 0.2rem 0;
+  transition: background 0.15s ease-out, transform 0.12s ease-out, box-shadow 0.12s;
+  box-shadow: 0 2px 6px rgba(22, 101, 52, 0.2);
+}
+
+.btn-tag:hover {
+  background: #bbf7d0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(22, 101, 52, 0.25);
+}
+
+/* ========= FOOTER ========= */
+
+.site-footer {
+  background: linear-gradient(90deg, #020617, #111827);
+  color: #e5e7eb;
+  padding: 0.9rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* ========= OTROS ========= */
+
+ol {
+  padding-left: 1.1rem;
+}
+
+ol li {
+  margin-bottom: 0.4rem;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .logo-empresa {
+    width: 32px;
+    height: 32px;
+  }
+}
