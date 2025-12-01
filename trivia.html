@@ -1,1 +1,494 @@
-PUT YOUR trivia.html content here
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Trivia – Aula Virtual Geotecnia I</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+        <img src="imagenes/logo.jpg" alt="Logo Geotecnia" class="logo-empresa me-2" />
+        <span>Aula Virtual Geotecnia I</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navBar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="archivos.html">Archivos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="trivia.html">Trivia</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+
+  <header class="py-4">
+    <div class="container">
+      <h2 class="fw-bold mb-1 text-center">Trivias del Laboratorio de Geotecnia I</h2>
+      <p class="text-center text-muted mb-0">
+        Cuestionarios breves para repasar los conceptos clave de cada práctica antes de entrar al laboratorio.
+      </p>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <!-- BOTONES RÁPIDOS -->
+    <section class="mb-4">
+      <p class="fw-semibold mt-2">Selecciona la práctica que quieres repasar</p>
+      <a class="btn-tag" href="#p1">Práctica 1 – Análisis granulométrico (mecánico)</a>
+      <a class="btn-tag" href="#p2">Práctica 2 – Análisis granulométrico (hidrómetro)</a>
+      <a class="btn-tag" href="#p3">Práctica 3 – Límites de consistencia (Atterberg)</a>
+      <a class="btn-tag" href="#p4">Práctica 4 – Relaciones de fases</a>
+      <a class="btn-tag" href="#p5">Práctica 5 – Peso unitario suelos cohesivos</a>
+      <a class="btn-tag" href="#p6">Práctica 6 – Gravedad específica de los sólidos</a>
+      <a class="btn-tag" href="#p7">Práctica 7 – Ensayo de compactación (Proctor)</a>
+      <a class="btn-tag" href="#p8">Práctica 8 – Densidad en campo (cono de arena)</a>
+      <a class="btn-tag" href="#p9">Práctica 9 – Permeabilidad (cabeza constante y variable)</a>
+      <a class="btn-tag" href="#p10">Práctica 10 – Consolidación unidimensional</a>
+      <a class="btn-tag" href="#p11">Práctica 11 – Corte directo</a>
+      <a class="btn-tag" href="#p12">Práctica 12 – Compresión inconfinada</a>
+    </section>
+
+    <!-- =============== P1 ================= -->
+    <section id="p1" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 1: Análisis granulométrico (método mecánico)</h4>
+        <p class="text-muted mb-3">
+          Instrucciones: Marca mentalmente (o en tu cuaderno) la opción que consideres correcta. Luego revisa la clave al final.
+        </p>
+        <ol>
+          <li>
+            El objetivo principal del análisis granulométrico por tamices es:<br />
+            A) Determinar la humedad natural del suelo.<br />
+            B) Obtener la distribución del tamaño de partículas para clasificar el suelo.<br />
+            C) Medir la resistencia al corte del suelo.<br />
+            D) Calcular la presión de poros en el suelo.
+          </li>
+          <li>
+            En mecánica de suelos, el tamiz que separa suelos gruesos de finos es, típicamente:<br />
+            A) Tamiz N° 4 (4,75 mm).<br />
+            B) Tamiz N° 10 (2,0 mm).<br />
+            C) Tamiz N° 40 (0,425 mm).<br />
+            D) Tamiz N° 200 (0,075 mm).
+          </li>
+          <li>
+            En la curva granulométrica se representa usualmente:<br />
+            A) Porcentaje que pasa vs. humedad.<br />
+            B) Porcentaje que pasa vs. diámetro de partícula (escala logarítmica).<br />
+            C) Esfuerzo vs. deformación.<br />
+            D) Profundidad vs. presión de poros.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 1:</p>
+        <p class="small mb-0">1) B · 2) D · 3) B</p>
+      </div>
+    </section>
+
+    <!-- =============== P2 ================= -->
+    <section id="p2" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 2: Análisis granulométrico de suelos finos (método del hidrómetro)</h4>
+        <p class="text-muted mb-3">
+          Este cuestionario repasa la idea básica del ensayo de hidrometría y sus principales parámetros.
+        </p>
+        <ol>
+          <li>
+            El análisis por hidrómetro se utiliza principalmente para estudiar:<br />
+            A) Partículas mayores a 4,75 mm.<br />
+            B) Solo partículas entre 2 mm y 0,425 mm.<br />
+            C) Partículas que pasan el tamiz N° 200 (0,075 mm).<br />
+            D) Rocas intactas.
+          </li>
+          <li>
+            ¿Qué equipo es fundamental en este ensayo para realizar las lecturas de sedimentación?<br />
+            A) Proctor.<br />
+            B) Hidrómetro.<br />
+            C) Cono de arena.<br />
+            D) Permeámetro.
+          </li>
+          <li>
+            La corrección por temperatura en el ensayo de hidrómetro se hace porque:<br />
+            A) Cambia la viscosidad del agua y la velocidad de sedimentación.<br />
+            B) Afecta el peso unitario seco del suelo.<br />
+            C) Modifica la altura del molde de compactación.<br />
+            D) Cambia la lectura del deformímetro.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 2:</p>
+        <p class="small mb-0">1) C · 2) B · 3) A</p>
+      </div>
+    </section>
+
+    <!-- =============== P3 ================= -->
+    <section id="p3" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 3: Límites de consistencia o de Atterberg</h4>
+        <p class="text-muted mb-3">
+          Preguntas para repasar los conceptos de límite líquido, plástico y de contracción.
+        </p>
+        <ol>
+          <li>
+            Los límites de Atterberg se utilizan principalmente para:<br />
+            A) Definir el peso unitario máximo de los suelos gruesos.<br />
+            B) Caracterizar el comportamiento de suelos de grano fino según su contenido de humedad.<br />
+            C) Calcular el coeficiente de permeabilidad.<br />
+            D) Determinar la gravedad específica de los sólidos.
+          </li>
+          <li>
+            El equipo característico usado para determinar el límite líquido es:<br />
+            A) Aparato de Casagrande.<br />
+            B) Permeámetro de carga constante.<br />
+            C) Cono de arena.<br />
+            D) Picnómetro.
+          </li>
+          <li>
+            En la gráfica de flujo (contenido de humedad vs. número de golpes) el límite líquido LL se obtiene
+            para:<br />
+            A) 10 golpes.<br />
+            B) 15 golpes.<br />
+            C) 25 golpes.<br />
+            D) 50 golpes.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 3:</p>
+        <p class="small mb-0">1) B · 2) A · 3) C</p>
+      </div>
+    </section>
+
+    <!-- =============== P4 ================= -->
+    <section id="p4" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 4: Relaciones volumétricas y gravimétricas de los suelos</h4>
+        <p class="text-muted mb-3">
+          Cuestionario sobre las fases del suelo y las relaciones de fase más importantes.
+        </p>
+        <ol>
+          <li>
+            En un suelo se distinguen tres fases principales:<br />
+            A) Sólida, líquida y gaseosa.<br />
+            B) Orgánica, inorgánica y metálica.<br />
+            C) Cohesiva, granular y rocosa.<br />
+            D) Plástica, semisólida y sólida.
+          </li>
+          <li>
+            Un suelo está totalmente saturado cuando:<br />
+            A) Todos sus vacíos están llenos de aire.<br />
+            B) Todos sus vacíos están ocupados por agua.<br />
+            C) No existe fase gaseosa ni líquida.<br />
+            D) Solo hay vapor de agua.
+          </li>
+          <li>
+            El índice de vacíos <em>e</em> se define como:<br />
+            A) Volumen de partículas sólidas / volumen total.<br />
+            B) Peso de agua / peso seco.<br />
+            C) Volumen de vacíos / volumen de sólidos.<br />
+            D) Volumen de vacíos / volumen total.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 4:</p>
+        <p class="small mb-0">1) A · 2) B · 3) C</p>
+      </div>
+    </section>
+
+    <!-- =============== P5 ================= -->
+    <section id="p5" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 5: Peso unitario de suelos cohesivos</h4>
+        <p class="text-muted mb-3">
+          Preguntas sobre el concepto de peso unitario y el principio que se usa en el ensayo de laboratorio.
+        </p>
+        <ol>
+          <li>
+            El procedimiento para obtener el peso unitario de suelos cohesivos en laboratorio se basa en:<br />
+            A) El método del hidrómetro.<br />
+            B) El principio de Arquímedes (volumen de agua desplazada).<br />
+            C) La ley de Darcy.<br />
+            D) La curva esfuerzo–deformación.
+          </li>
+          <li>
+            El peso unitario húmedo se obtiene como:<br />
+            A) Peso del suelo seco / volumen total.<br />
+            B) Peso del suelo húmedo / volumen total.<br />
+            C) Peso del agua / volumen de vacíos.<br />
+            D) Peso de partículas sólidas / volumen de vacíos.
+          </li>
+          <li>
+            ¿Por qué es importante determinar el peso unitario de los suelos en geotecnia?<br />
+            A) Porque permite estimar el contenido de materia orgánica.<br />
+            B) Porque se usa para clasificar suelos según color.<br />
+            C) Porque se relaciona con parámetros como fricción interna y asentamientos.<br />
+            D) Porque reemplaza la necesidad de conocer la humedad.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 5:</p>
+        <p class="small mb-0">1) B · 2) B · 3) C</p>
+      </div>
+    </section>
+
+    <!-- =============== P6 ================= -->
+    <section id="p6" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 6: Gravedad específica de los sólidos</h4>
+        <p class="text-muted mb-3">
+          Repaso del concepto de gravedad específica y su importancia en mecánica de suelos.
+        </p>
+        <ol>
+          <li>
+            En mecánica de suelos, la gravedad específica de los sólidos se define como:<br />
+            A) Relación entre peso unitario de las partículas sólidas y el del agua.<br />
+            B) Peso unitario húmedo del suelo.<br />
+            C) Porcentaje de partículas que pasan el tamiz N° 200.<br />
+            D) Contenido de humedad.
+          </li>
+          <li>
+            El fluido de referencia que se utiliza normalmente para definir la gravedad específica es:<br />
+            A) Aire.<br />
+            B) Aceite.<br />
+            C) Agua destilada.<br />
+            D) Mercurio.
+          </li>
+          <li>
+            La gravedad específica de los sólidos se utiliza, entre otros, para:<br />
+            A) Calcular relaciones de fase y apoyar ensayos como granulometría por sedimentación y compactación.<br />
+            B) Determinar directamente el ángulo de fricción interna.<br />
+            C) Medir la velocidad del flujo subterráneo.<br />
+            D) Determinar el módulo de elasticidad.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 6:</p>
+        <p class="small mb-0">1) A · 2) C · 3) A</p>
+      </div>
+    </section>
+
+    <!-- =============== P7 ================= -->
+    <section id="p7" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 7: Ensayo de compactación – Proctor estándar y modificado</h4>
+        <p class="text-muted mb-3">
+          Preguntas clave sobre la curva de compactación y las diferencias entre ambos métodos.
+        </p>
+        <ol>
+          <li>
+            En la curva de compactación se grafica típicamente:<br />
+            A) Contenido de humedad (abscisas) vs. peso unitario seco (ordenadas).<br />
+            B) Esfuerzo vs. deformación.<br />
+            C) Altura de caída vs. número de capas.<br />
+            D) Tiempo vs. presión de poros.
+          </li>
+          <li>
+            La humedad óptima es:<br />
+            A) El contenido de humedad más bajo que se puede medir.<br />
+            B) El contenido de humedad correspondiente al peso unitario seco máximo.<br />
+            C) El contenido de humedad cuando el suelo está totalmente saturado.<br />
+            D) Un valor arbitrario elegido por el operador.
+          </li>
+          <li>
+            La principal diferencia entre el Proctor estándar y el Proctor modificado es:<br />
+            A) El tipo de suelo a ensayar.<br />
+            B) La energía de compactación aplicada (altura de caída, masa del martillo y número de golpes).<br />
+            C) El tipo de molde usado.<br />
+            D) El equipo de medición de humedad.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 7:</p>
+        <p class="small mb-0">1) A · 2) B · 3) B</p>
+      </div>
+    </section>
+
+    <!-- =============== P8 ================= -->
+    <section id="p8" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 8: Densidad del suelo en campo – Método del cono de arena</h4>
+        <p class="text-muted mb-3">
+          Cuestionario para recordar el procedimiento y el objetivo del ensayo de densidad in situ.
+        </p>
+        <ol>
+          <li>
+            El método del cono de arena se utiliza para determinar principalmente:<br />
+            A) La consolidación unidimensional del suelo.<br />
+            B) El peso unitario seco del suelo compactado en campo.<br />
+            C) El coeficiente de permeabilidad.<br />
+            D) La gravedad específica.
+          </li>
+          <li>
+            El material que se usa dentro del frasco con cono para llenar el hueco excavado es:<br />
+            A) Arena calibrada y seca.<br />
+            B) Grava gruesa.<br />
+            C) Arcilla blanda.<br />
+            D) Agua destilada.
+          </li>
+          <li>
+            El resultado de densidad de campo se compara con la densidad de laboratorio para:<br />
+            A) Obtener el módulo de elasticidad.<br />
+            B) Calcular la presión de poros.<br />
+            C) Determinar el grado de compactación logrado en obra.<br />
+            D) Conocer el coeficiente de consolidación.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 8:</p>
+        <p class="small mb-0">1) B · 2) A · 3) C</p>
+      </div>
+    </section>
+
+    <!-- =============== P9 ================= -->
+    <section id="p9" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 9: Ensayo de permeabilidad – Cabeza constante y variable</h4>
+        <p class="text-muted mb-3">
+          Preguntas sobre el coeficiente de permeabilidad y los tipos de permeámetro.
+        </p>
+        <ol>
+          <li>
+            El coeficiente de permeabilidad <em>k</em> representa:<br />
+            A) La rigidez del suelo.<br />
+            B) La facilidad con la que el agua puede fluir a través de la masa de suelo.<br />
+            C) La capacidad de carga última.<br />
+            D) El grado de compactación.
+          </li>
+          <li>
+            El permeámetro de carga constante se utiliza generalmente para:<br />
+            A) Suelos de muy baja permeabilidad (arcillas muy plásticas).<br />
+            B) Suelos de alta permeabilidad como arenas y gravas.<br />
+            C) Rocas intactas.<br />
+            D) Determinar la gravedad específica.
+          </li>
+          <li>
+            La ley de Darcy, en forma básica, relaciona el caudal <em>q</em> con:<br />
+            A) q = γ · e.<br />
+            B) q = k · i · A.<br />
+            C) q = σ · ε.<br />
+            D) q = w · Gs.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 9:</p>
+        <p class="small mb-0">1) B · 2) B · 3) B</p>
+      </div>
+    </section>
+
+    <!-- =============== P10 ================= -->
+    <section id="p10" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 10: Ensayo de consolidación unidimensional</h4>
+        <p class="text-muted mb-3">
+          Cuestionario sobre el proceso de consolidación y los parámetros que se obtienen en el ensayo.
+        </p>
+        <ol>
+          <li>
+            La consolidación unidimensional en suelos finos se refiere principalmente a:<br />
+            A) Un aumento de la temperatura del suelo.<br />
+            B) La disipación del exceso de presión de poros produciendo asentamientos.<br />
+            C) La variación de color del suelo.<br />
+            D) La pérdida de partículas gruesas.
+          </li>
+          <li>
+            ¿En qué tipo de suelo es más importante estudiar la consolidación?<br />
+            A) Arenas muy densas de alta permeabilidad.<br />
+            B) Gravas.<br />
+            C) Depósitos de arcillas de baja permeabilidad.<br />
+            D) Suelos orgánicos muy ligeros.
+          </li>
+          <li>
+            Algunos parámetros que se obtienen a partir del ensayo de consolidación son:<br />
+            A) Carga de rotura y módulo de elasticidad.<br />
+            B) Cc (índice de compresión), Cs (índice de expansión) y σ′p (esfuerzo de preconsolidación).<br />
+            C) Gravedad específica y humedad óptima.<br />
+            D) Coeficiente de permeabilidad y ángulo de fricción.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 10:</p>
+        <p class="small mb-0">1) B · 2) C · 3) B</p>
+      </div>
+    </section>
+
+    <!-- =============== P11 ================= -->
+    <section id="p11" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 11: Ensayo de corte directo</h4>
+        <p class="text-muted mb-3">
+          Preguntas para repasar el objetivo del ensayo de corte directo y los parámetros que se obtienen.
+        </p>
+        <ol>
+          <li>
+            El ensayo de corte directo permite determinar principalmente:<br />
+            A) El coeficiente de permeabilidad.<br />
+            B) La resistencia al corte del suelo en un plano de falla predefinido.<br />
+            C) La gravedad específica de los sólidos.<br />
+            D) El peso unitario seco máximo.
+          </li>
+          <li>
+            De la envolvente de falla obtenida a partir de varios ensayos de corte directo se pueden estimar:<br />
+            A) El módulo de elasticidad y el coeficiente de Poisson.<br />
+            B) La cohesión efectiva <em>c′</em> y el ángulo de fricción interna efectivo <em>φ′</em>.<br />
+            C) Únicamente la humedad óptima.<br />
+            D) Solo la densidad relativa.
+          </li>
+          <li>
+            En el ensayo de corte directo:<br />
+            A) La superficie de falla se genera en forma aleatoria dentro de la probeta.<br />
+            B) La superficie de falla está controlada por el plano de corte de la caja del equipo.<br />
+            C) No existe superficie de falla.<br />
+            D) Siempre se aplica drenaje nulo.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 11:</p>
+        <p class="small mb-0">1) B · 2) B · 3) B</p>
+      </div>
+    </section>
+
+    <!-- =============== P12 ================= -->
+    <section id="p12" class="mb-5">
+      <div class="card-custom p-4">
+        <h4 class="mb-2">Práctica 12: Ensayo de compresión inconfinada</h4>
+        <p class="text-muted mb-3">
+          Preguntas rápidas sobre el uso del ensayo y el parámetro de resistencia que se obtiene.
+        </p>
+        <ol>
+          <li>
+            El ensayo de compresión inconfinada se realiza típicamente sobre:<br />
+            A) Arenas limpias saturadas.<br />
+            B) Rocas ígneas.<br />
+            C) Suelos cohesivos saturados (arcillas).<br />
+            D) Gravas angulares.
+          </li>
+          <li>
+            En este ensayo la probeta se carga axialmente hasta la falla:<br />
+            A) Con confinamiento lateral constante.<br />
+            B) Sin confinamiento lateral (esfuerzo de confinamiento cero).<br />
+            C) En un estado triaxial consolidado-drenado.<br />
+            D) Solo bajo compresión lateral.
+          </li>
+          <li>
+            A partir del ensayo de compresión inconfinada se obtiene la resistencia a compresión inconfinada
+            <em>q<sub>u</sub></em>. Para suelos cohesivos saturados, el esfuerzo cortante no drenado
+            <em>c<sub>u</sub></em> se aproxima como:<br />
+            A) c<sub>u</sub> = q<sub>u</sub> / 2.<br />
+            B) c<sub>u</sub> = q<sub>u</sub> · 2.<br />
+            C) c<sub>u</sub> = q<sub>u</sub> / 4.<br />
+            D) c<sub>u</sub> = q<sub>u</sub>.
+          </li>
+        </ol>
+        <p class="fw-semibold mt-3">✅ Clave Práctica 12:</p>
+        <p class="small mb-0">1) C · 2) B · 3) A</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      © 2025 Laboratorio Virtual de Geotecnia I – Programa de Ingeniería Civil – Universidad de Sucre
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
